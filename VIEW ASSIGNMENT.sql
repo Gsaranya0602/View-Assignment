@@ -1,10 +1,11 @@
-use assignment1;
-select* from employee_details;
 
-/*Create a View for employee table to get the salary if it is <10000 mark it as 'LOW' otherwise 
+
+
+1.Create a View for employee table to get the salary if it is <10000 mark it as 'LOW' otherwise 
 'MODERATE' in separate column 'Sal_Status'. So the result of view should display the following
- details like EmpID,EmpName,Department,Salary,Sal_Status.*/
- 
+ details like EmpID,EmpName,Department,Salary,Sal_Status.
+
+use assignment1;
  
  #--CREATE TABLE---
  CREATE TABLE employee (
@@ -34,5 +35,5 @@ INSERT INTO employee VALUES
  if(Salary<10000,'LOW','MODERATE') as Sal_status
  from employee;
 
-#--SELECT VIEW--
+#--DISPLAY VIEW--
  select *from employee_table_view;
